@@ -10,6 +10,7 @@ import { main as eslintignoreGenerator } from "./devConfigs/lint/eslintignore";
 import { main as envGenerator } from "./devConfigs/env/env";
 import { main as envExampleGenerator } from "./devConfigs/env/envExample";
 import { main as editorconfigGenerator } from "./devConfigs/lint/editorconfig";
+import { main as prepareCommitMsgGenerator } from "./devConfigs/git/prepareCommitMsg";
 
 export const main = async ({ rootDirectory, templateDirectory }) => {
   await tsconfigGenerator({ rootDirectory, templateDirectory });
@@ -24,4 +25,5 @@ export const main = async ({ rootDirectory, templateDirectory }) => {
   await envGenerator({ rootDirectory, templateDirectory });
   await envExampleGenerator({ rootDirectory, templateDirectory });
   await editorconfigGenerator({ rootDirectory, templateDirectory });
+  await prepareCommitMsgGenerator({ rootDirectory, templateDirectory });
 };

@@ -8,5 +8,8 @@
   },
   "scripts": {
     "dev": "nodemon --watch src --exec dt --run ."
+  },
+  "dependencies": {
+    "npm-add-script": "^1.1.0"
   }
 }
