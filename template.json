@@ -10,7 +10,7 @@
   "run": [
     "yarn init -y && git init",
     "yarn add -D @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript @commitlint/config-conventional @commitlint/cli @types/express @types/jest @typescript-eslint/eslint-plugin babel-plugin-module-resolver commitizen cz-conventional-changelog eslint eslint-config-airbnb-base husky jest pinst ts-node-dev tsconfig-paths typescript ts-jest",
-    "yarn husky install && yarn husky add .husky/commit-msg \"yarn commitlint --edit $1\" && commitizen init cz-conventional-changelog --yarn --dev --exact",
+    "yarn husky install && yarn husky add .husky/commit-msg \"yarn commitlint --edit $1\" && yarn commitizen init cz-conventional-changelog --yarn --dev --exact",
     "file:/src/generators/devConfigs.js",
     "yarn add body-parser dotenv express",
     "file:/src/generators/fileStructure.js",
