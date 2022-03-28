@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Write here a description for your template",
   "run": [
-    "yarn init -y",
-    "file:/src/generators/example.js"
+    "yarn init -y && git init",
+    "yarn add -D @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript @commitlint/config-conventional @commitlint/cli @types/express @types/jest @typescript-eslint/eslint-plugin babel-plugin-module-resolver commitizen cz-conventional-changelog eslint eslint-config-airbnb-base husky jest pinst ts-node-dev tsconfig-paths typescript ts-jest",
+    "yarn husky install && yarn husky add .husky/commit-msg \"yarn commitlint --edit $1\"",
+    "file:/src/generators/devConfigs.js"
   ]
 }
