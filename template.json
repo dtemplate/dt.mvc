@@ -2,6 +2,11 @@
   "name": "mvc",
   "version": "1.0.0",
   "description": "Generate a nodejs api using the mvc folder structure as a base",
+  "successfullyMessages": [
+    "Successfully generated the api",
+    "Please run \"yarn dev\" to start the server",
+    "after that open your browser at http://localhost:3001"
+  ],
   "run": [
     "yarn init -y && git init",
     "yarn add -D @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript @commitlint/config-conventional @commitlint/cli @types/express @types/jest @typescript-eslint/eslint-plugin babel-plugin-module-resolver commitizen cz-conventional-changelog eslint eslint-config-airbnb-base husky jest pinst ts-node-dev tsconfig-paths typescript ts-jest",
